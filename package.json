@@ -1,0 +1,25 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "headless":"npx cypress run",
+    "headed":"npx cypress open",
+    "chromeb":"npx cypress run --browser chrome",
+    "smoke":"npx cypress run --spec \"cypress/e2e/smoke/*.cy.js\"",
+    "regression":"npx cypress run --spec \"cypress/e2e/regression/*.cy.js\""
+    },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.13.3",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
